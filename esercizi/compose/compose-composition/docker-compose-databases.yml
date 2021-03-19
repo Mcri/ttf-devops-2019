@@ -1,0 +1,23 @@
+version: '3'
+services:
+  redis:
+    image: redis:alpine
+    restart: on-failure
+    command: --appendonly yes
+    volumes:
+      - redis_volume:/data
+
+  mongo:
+    image: mongo
+    restart: on-failure
+    volumes:
+      - ./conf/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - mongo_volume:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=example
+      - MONGO_INITDB_DATABASE=admin
+
+volumes:
+  mongo_volume:
+  redis_volume:
