@@ -1,0 +1,22 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="Test HexToRgbConverter REST API" tests="9" errors="0" failures="0" skipped="0" timestamp="2021-03-23T14:39:05" time="0.043">
+    <testcase classname="Test HexToRgbConverter REST API" name="Should include in the response body the RGB value corresponding to the query: FF0000" time="0.021">
+    </testcase>
+    <testcase classname="Test HexToRgbConverter REST API" name="Should include in the response body the RGB value corresponding to the query: FFBF00" time="0.002">
+    </testcase>
+    <testcase classname="Test HexToRgbConverter REST API" name="Should include in the response body the RGB value corresponding to the query: 80FF00" time="0.002">
+    </testcase>
+    <testcase classname="Test HexToRgbConverter REST API" name="Should include in the response body the RGB value corresponding to the query: 00FF40" time="0.002">
+    </testcase>
+    <testcase classname="Test HexToRgbConverter REST API" name="Should include in the response body the RGB value corresponding to the query: 00FFFF" time="0.002">
+    </testcase>
+    <testcase classname="Test HexToRgbConverter REST API" name="Should include in the response body the RGB value corresponding to the query: 0040FF" time="0.002">
+    </testcase>
+    <testcase classname="Test HexToRgbConverter REST API" name="Should include in the response body the RGB value corresponding to the query: 8000FF" time="0.002">
+    </testcase>
+    <testcase classname="Test HexToRgbConverter REST API" name="Should include in the response body the RGB value corresponding to the query: FF00BF" time="0.001">
+    </testcase>
+    <testcase classname="Test HexToRgbConverter REST API" name="Should include in the response body the RGB value corresponding to the query: FF0040" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>
