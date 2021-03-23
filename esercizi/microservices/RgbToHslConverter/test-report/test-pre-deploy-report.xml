@@ -1,0 +1,22 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="Test RgbtoHslConverter API" tests="9" errors="0" failures="0" skipped="0" timestamp="2021-03-23T14:40:17" time="0.09">
+    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.04">
+    </testcase>
+    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.005">
+    </testcase>
+    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.004">
+    </testcase>
+    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.004">
+    </testcase>
+    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.005">
+    </testcase>
+    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.007">
+    </testcase>
+    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.004">
+    </testcase>
+    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>
