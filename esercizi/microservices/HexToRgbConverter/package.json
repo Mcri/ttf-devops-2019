@@ -23,7 +23,7 @@
     "test:unit": "ts-mocha ./src/**/*.test.ts --reporter mocha-jenkins-reporter --reporter-options junit_report_path=./test-report/test-post-deploy-report.xml",
     "test:component": "ts-mocha ./src/**/*.componentTest.ts --reporter mocha-jenkins-reporter --reporter-options junit_report_path=./test-report/test-pre-deploy-report.xml",
     "start": "ts-node src/HttpServer.ts",
-    "serve": "node $npm_package_main",
+    "serve": "node dist/HexToRgbConverter/src/HttpServer.js",
     "prebuild": "npm run-script clean",
     "predist": "npm run-script build",
     "preserve": "npm run-script build",
