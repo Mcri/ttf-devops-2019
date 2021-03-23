@@ -1,16 +1,16 @@
 {
-  "name": "microservices-template",
+  "name": "HexToRgbConverter",
   "version": "0.0.1",
   "description": "This software is part of a micro-service architecture written for demonstration purposes.",
   "keywords": [],
   "homepage": "",
   "license": "GPL-3.0",
   "author": {
-    "name": "Gianni Bombelli (bombo82)",
-    "email": "bombo82@giannibombelli.it"
+    "name": "Paolo Invernizzi (PInve)",
+    "email": "invernP91@gmail.com"
   },
   "contributors": [],
-  "main": "dist/microservice-template/src/HttpServer.js",
+  "main": "dist/HexToRgbConverter/src/HttpServer.js",
   "repository": {
     "type": "git",
     "url": ""
@@ -23,7 +23,7 @@
     "test:unit": "ts-mocha ./src/**/*.test.ts --reporter mocha-jenkins-reporter --reporter-options junit_report_path=./test-report/test-post-deploy-report.xml",
     "test:component": "ts-mocha ./src/**/*.componentTest.ts --reporter mocha-jenkins-reporter --reporter-options junit_report_path=./test-report/test-pre-deploy-report.xml",
     "start": "ts-node src/HttpServer.ts",
-    "serve": "node $npm_package_main",
+    "serve": "node dist/HexToRgbConverter/src/HttpServer.js",
     "prebuild": "npm run-script clean",
     "predist": "npm run-script build",
     "preserve": "npm run-script build",
