@@ -1,0 +1,22 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="test suite description" tests="9" errors="0" failures="0" skipped="0" timestamp="2021-03-23T14:16:40" time="0.044">
+    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0.003">
+    </testcase>
+    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0.001">
+    </testcase>
+    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0">
+    </testcase>
+    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0">
+    </testcase>
+    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0">
+    </testcase>
+    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0">
+    </testcase>
+    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0.001">
+    </testcase>
+    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0.001">
+    </testcase>
+    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>
