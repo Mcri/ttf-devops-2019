@@ -1,22 +1,28 @@
 <testsuites name="Mocha Tests">
-  <testsuite name="Test RgbtoHslConverter API" tests="9" errors="0" failures="0" skipped="0" timestamp="2021-03-23T14:40:17" time="0.09">
-    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.04">
+  <testsuite name="Test RgbtoHslConverter API" tests="12" errors="0" failures="0" skipped="0" timestamp="2021-03-25T16:25:37" time="0.097">
+    <testcase classname="Test RgbtoHslConverter API" name="should include in the response body the correct hsl value {&quot;hue&quot;:0,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0.041">
     </testcase>
-    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.005">
+    <testcase classname="Test RgbtoHslConverter API" name="should include in the response body the correct hsl value {&quot;hue&quot;:45,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0.002">
     </testcase>
-    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.004">
+    <testcase classname="Test RgbtoHslConverter API" name="should include in the response body the correct hsl value {&quot;hue&quot;:90,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0.002">
     </testcase>
-    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.004">
+    <testcase classname="Test RgbtoHslConverter API" name="should include in the response body the correct hsl value {&quot;hue&quot;:135,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0.003">
     </testcase>
-    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.005">
+    <testcase classname="Test RgbtoHslConverter API" name="should include in the response body the correct hsl value {&quot;hue&quot;:180,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0.003">
     </testcase>
-    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.002">
+    <testcase classname="Test RgbtoHslConverter API" name="should include in the response body the correct hsl value {&quot;hue&quot;:225,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0.01">
     </testcase>
-    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.007">
+    <testcase classname="Test RgbtoHslConverter API" name="should include in the response body the correct hsl value {&quot;hue&quot;:270,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0.005">
     </testcase>
-    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.004">
+    <testcase classname="Test RgbtoHslConverter API" name="should include in the response body the correct hsl value {&quot;hue&quot;:315,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0.004">
     </testcase>
-    <testcase classname="Test RgbtoHslConverter API" name="should convert the rgb value [object Object] to the hsl  value [object Object]" time="0.002">
+    <testcase classname="Test RgbtoHslConverter API" name="should include in the response body the correct hsl value {&quot;hue&quot;:345,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0.004">
+    </testcase>
+    <testcase classname="Test RgbtoHslConverter API" name="Should return an error message when no value is provided as query parameter" time="0.004">
+    </testcase>
+    <testcase classname="Test RgbtoHslConverter API" name="Should return an error message when an invalid value is provided as query parameter" time="0.002">
+    </testcase>
+    <testcase classname="Test RgbtoHslConverter API" name="Should return an error message when an incomplete value is provided query parameter" time="0.003">
     </testcase>
   </testsuite>
 </testsuites>

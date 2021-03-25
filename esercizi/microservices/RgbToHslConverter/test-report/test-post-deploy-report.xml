@@ -1,22 +1,22 @@
 <testsuites name="Mocha Tests">
-  <testsuite name="test suite description" tests="9" errors="0" failures="0" skipped="0" timestamp="2021-03-23T14:16:40" time="0.044">
-    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0.003">
+  <testsuite name="Test RGB to HSL converter" tests="9" errors="0" failures="0" skipped="0" timestamp="2021-03-25T16:23:09" time="0.013">
+    <testcase classname="Test RGB to HSL converter" name="should convert Rgb value {&quot;red&quot;:255,&quot;green&quot;:0,&quot;blue&quot;:0} to corresponding Hsl value {&quot;hue&quot;:0,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0.002">
     </testcase>
-    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0.001">
+    <testcase classname="Test RGB to HSL converter" name="should convert Rgb value {&quot;red&quot;:255,&quot;green&quot;:191,&quot;blue&quot;:0} to corresponding Hsl value {&quot;hue&quot;:45,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0">
     </testcase>
-    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0">
+    <testcase classname="Test RGB to HSL converter" name="should convert Rgb value {&quot;red&quot;:128,&quot;green&quot;:255,&quot;blue&quot;:0} to corresponding Hsl value {&quot;hue&quot;:90,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0">
     </testcase>
-    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0">
+    <testcase classname="Test RGB to HSL converter" name="should convert Rgb value {&quot;red&quot;:0,&quot;green&quot;:255,&quot;blue&quot;:64} to corresponding Hsl value {&quot;hue&quot;:135,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0">
     </testcase>
-    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0">
+    <testcase classname="Test RGB to HSL converter" name="should convert Rgb value {&quot;red&quot;:0,&quot;green&quot;:255,&quot;blue&quot;:255} to corresponding Hsl value {&quot;hue&quot;:180,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0">
     </testcase>
-    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0">
+    <testcase classname="Test RGB to HSL converter" name="should convert Rgb value {&quot;red&quot;:0,&quot;green&quot;:64,&quot;blue&quot;:255} to corresponding Hsl value {&quot;hue&quot;:225,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0.001">
     </testcase>
-    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0.001">
+    <testcase classname="Test RGB to HSL converter" name="should convert Rgb value {&quot;red&quot;:128,&quot;green&quot;:0,&quot;blue&quot;:255} to corresponding Hsl value {&quot;hue&quot;:270,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0">
     </testcase>
-    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0.001">
+    <testcase classname="Test RGB to HSL converter" name="should convert Rgb value {&quot;red&quot;:255,&quot;green&quot;:0,&quot;blue&quot;:191} to corresponding Hsl value {&quot;hue&quot;:315,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0">
     </testcase>
-    <testcase classname="test suite description" name="should convert Rgb value to corresponding Hsl value" time="0">
+    <testcase classname="Test RGB to HSL converter" name="should convert Rgb value {&quot;red&quot;:255,&quot;green&quot;:0,&quot;blue&quot;:64} to corresponding Hsl value {&quot;hue&quot;:345,&quot;saturation&quot;:100,&quot;lightness&quot;:50}" time="0">
     </testcase>
   </testsuite>
 </testsuites>
