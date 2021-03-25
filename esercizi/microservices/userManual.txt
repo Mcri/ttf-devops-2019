@@ -1,0 +1,90 @@
+Di seguito, sono riportati i passaggi necessari per il corretto avvio ed utilizzo dei servizi messi a disposizione.
+
+----- AVVIO -----
+
+Utilizzare il file docker-compose.yml presente nella directory /microservices per la corretta inizializzazione dei microservizi di interesse
+e del reverse-proxy Traefik.
+
+Se si dispone di una interfaccia grafica, selezionare dal menù contestuale l'opzione per effettuare il comando di up sul file docker-compose.yml
+
+Diversamente, è possibile seguire i successivi passi per l'avvio mediante comandi da terminale:
+    - eseguire la propria shell/prompt comandi, preferibilmente con privilegi di amministratore
+    - posizionarsi all'interno della cartella <root>/ttf-devops-2019/esercizi/microservices
+    - lanciare il comando:
+
+        docker-compose up
+
+----- UTILIZZO -----
+
+    web console Traefik (reverse proxy):
+
+        disponibile all'indirizzo localhost:8080
+
+    hex_to_rgb
+
+        Il servizio è disponibile all'indirizzo localhost/hex_to_rgb, mediante chiamate HTTP GET.
+
+        Per poterlo utilizzare è necessario fornire una query color contenente un oggetto JSON atto a rappresentare un colore in formato esadecimale.
+        Esempio di chiamata al servizio valida:
+
+            localhost/hex_to_rgb?color={"hex": "FFFFFF"}
+
+        Si otterrà una risposta contenente una rappresentazione JSON del colore in formato RGB, esempio:
+
+            {"red":255,"green":255,"blue":255}
+    
+    rgb_to_hsl
+
+        Il servizio è disponibile all'indirizzo localhost/rgb_to_hsl, mediante chiamate HTTP GET.
+        
+        Per poterlo utilizzare è necessario fornire una query color contenente un oggetto JSON atto a rappresentare un colore in formato esadecimale.
+        Esempio di chiamata al servizio valida:
+
+            localhost/rgb_to_hsl?color={"red": 255, "green": 255, "blue": 255}
+
+        Si otterrà una risposta contenente una rappresentazione JSON del colore in formato HSL, esempio:
+
+            {"hue":0,"saturation":0,"lightness":100}
+
+
+----- SHUTDOWN -----
+
+Per interrompere l'esecuzione dei container, utilizzare il comando:
+
+   docker-compose stop
+
+I container verranno fermati ma NON saranno rimossi.
+
+Il comando:
+
+ docker-compose down
+
+permette invece l'interruzione e la rimozione dei container, oltre alla rimozione di ogni network creato.
+
+Aggiungendo il parametro-v è possibile rimuovere anche i volumi creati.
+
+----- TROUBLESHOOTING -----
+
+Per poter utilizzare i servizi in esame, è necessario verificare che la porta 8080 e 3000 non siano già utilizzate da altre applicazioni.
+
+Vi è la possibilità che alcuni container non vengano correttamente fermati o rimossi, causando problemi durante i successivi avvii.
+In presenza di comportamenti anomali ed errori, verificare con i seguenti comandi lo stato dei docker container in esecuzione:
+
+    docker container ps
+
+Qualora siano presenti container microservices_<nome servizio> (es: microservices_hex_to_rgb_1) prima dell'esecuzione del comando docker-compose,
+interromperne l'esecuzione.
+Questo è possibile annotando l'ID del container ed eseguendo il comando:
+
+    docker container stop < ID container >
+
+Il parametro -d permette di effettuare l'operazione di compose in modalità detached, rendendo disponibile il terminale.
+
+Lo stato dei servizi può essere monitorato dalla web console messa a disposizione da Traefik all'indirizzo:
+
+    localhost:8080
+
+
+
+
+
