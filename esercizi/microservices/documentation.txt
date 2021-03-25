@@ -1,0 +1,26 @@
+Per lo sviluppo delle funzionalità richieste si sono valutate due possibili soluzioni:
+
+1) L'implementazione di 4 microservizi, responsabili della conversione da un formato ai 3 rimanenti
+
+    HexConverter        RGBConverter
+    -> To RGB           -> to Hex
+    -> To HSL           -> to HSL
+    -> To CMYK          -> to CMYK
+
+    HSLConverter        CMYKConverter
+    -> To RGB           -> to Hex
+    -> To Hex           -> to HSL
+    -> To CMYK          -> to RGB
+
+2) L'implementazione di 6 microservizi e l'utilizzo della composizione tra gli stessi per garantire tutte le funzionalità
+
+    Microservizi stand-alone     ||     Funzionalità realizzate per composizione
+
+    HSL -> RGB  ;  HSL -> Hex    ||    CMYK -> HSL -> RGB ; CMYK -> HSL -> HEX 
+ 
+    RGB -> HSL ;  Hex -> HSL     ||    RGB -> HSL -> CMYK ; RGB -> HSL -> HEX 
+    
+    HSL -> CMYK  ;  CMYK -> HSL  ||    Hex -> HSL -> RGB  ; Hex -> HSL  -> CMYK
+
+
+Si è scelta la seconda implementazione.

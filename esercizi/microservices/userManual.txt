@@ -1,5 +1,12 @@
 Di seguito, sono riportati i passaggi necessari per il corretto avvio ed utilizzo dei servizi messi a disposizione.
 
+----- PREREQUISITI -----
+
+Sistema Linux based.
+Porte 8080 e 3000 non utilizzate da altre applicazioni.
+Docker daemon correttamente installato.
+
+
 ----- AVVIO -----
 
 Utilizzare il file docker-compose.yml presente nella directory /microservices per la corretta inizializzazione dei microservizi di interesse
