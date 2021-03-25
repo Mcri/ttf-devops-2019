@@ -1,0 +1,28 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="Test CmykToHsl REST API" tests="12" errors="0" failures="0" skipped="0" timestamp="2021-03-25T15:58:04" time="0.066">
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.032">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.003">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.003">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should return an error message when no value is provided as query parameter" time="0.003">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should return an error message when an invalid value is provided as query parameter" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should return an error message when an incomplete value is provided query parameter" time="0.003">
+    </testcase>
+  </testsuite>
+</testsuites>

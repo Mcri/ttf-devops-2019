@@ -1,0 +1,22 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="test suite description" tests="9" errors="0" failures="0" skipped="0" timestamp="2021-03-25T14:30:19" time="0.008">
+    <testcase classname="test suite description" name="Should convert CMYK value to corresponding HSL value" time="0.002">
+    </testcase>
+    <testcase classname="test suite description" name="Should convert CMYK value to corresponding HSL value" time="0">
+    </testcase>
+    <testcase classname="test suite description" name="Should convert CMYK value to corresponding HSL value" time="0">
+    </testcase>
+    <testcase classname="test suite description" name="Should convert CMYK value to corresponding HSL value" time="0">
+    </testcase>
+    <testcase classname="test suite description" name="Should convert CMYK value to corresponding HSL value" time="0">
+    </testcase>
+    <testcase classname="test suite description" name="Should convert CMYK value to corresponding HSL value" time="0">
+    </testcase>
+    <testcase classname="test suite description" name="Should convert CMYK value to corresponding HSL value" time="0">
+    </testcase>
+    <testcase classname="test suite description" name="Should convert CMYK value to corresponding HSL value" time="0">
+    </testcase>
+    <testcase classname="test suite description" name="Should convert CMYK value to corresponding HSL value" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>
