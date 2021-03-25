@@ -11,7 +11,7 @@ class HttpController {
                 res.send(convertedColor);
             }
             catch (err) {
-                const errMsg ="Error! The correct usage for this service is: localhost:HexToHslController?color={'hex': <string>}";
+                const errMsg ="Error! The correct usage for this service is: localhost/hex_to_hsl?color={'hex': <string>}";
                 res.status(400).json({ error: errMsg });
             }
         });
