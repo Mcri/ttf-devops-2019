@@ -30,7 +30,7 @@ describe("Test CmykToHsl REST API", () => {
 
   it("Should return an error message when no value is provided as query parameter", (done) => {
     const errMsg =
-      "Error! The correct usage for this service is: localhost:CmykToHslController?color={'cyan': <number>, 'magenta': <number>, 'yellow': <number>, 'black': <number>}";
+      "Error! The correct usage for this service is: localhost/cmyk_to_hsl?color={'cyan': <number>, 'magenta': <number>, 'yellow': <number>, 'black': <number>}";
     const errJson = { error: errMsg };
     chai
       .request(url)
@@ -45,7 +45,7 @@ describe("Test CmykToHsl REST API", () => {
 
   it("Should return an error message when an invalid value is provided as query parameter", (done) => {
     const errMsg =
-      "Error! The correct usage for this service is: localhost:CmykToHslController?color={'cyan': <number>, 'magenta': <number>, 'yellow': <number>, 'black': <number>}";
+      "Error! The correct usage for this service is: localhost/cmyk_to_hsl?color={'cyan': <number>, 'magenta': <number>, 'yellow': <number>, 'black': <number>}";
     const errJson = { error: errMsg };
     const badRequest =
       "{'cyan': 200, 'magenta': 40, 'yellow': 0, 'black': -70}";
@@ -62,7 +62,7 @@ describe("Test CmykToHsl REST API", () => {
 
   it("Should return an error message when an incomplete value is provided query parameter", (done) => {
     const errMsg =
-      "Error! The correct usage for this service is: localhost:CmykToHslController?color={'cyan': <number>, 'magenta': <number>, 'yellow': <number>, 'black': <number>}";
+      "Error! The correct usage for this service is: localhost/cmyk_to_hslr?color={'cyan': <number>, 'magenta': <number>, 'yellow': <number>, 'black': <number>}";
     const errJson = { error: errMsg };
     const badRequest = "{'cyan': 200, 'yellow': 0, 'black': 70}";
     chai

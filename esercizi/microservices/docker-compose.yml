@@ -30,6 +30,16 @@ services:
       - "traefik.http.services.hex_to_rgb.loadbalancer.server.port=3000"
       - "traefik.http.middlewares.hex_to_rgb-stripprefix.stripprefix.prefixes=/hex_to_rgb"
 
+  hex_to_hsl:
+    build: HexToHslConverter
+    restart: "no"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.hex_to_hsl.rule=PathPrefix(`/hex_to_hsl`)"
+      - "traefik.http.routers.hex_to_hsl.middlewares=hex_to_hsl-stripprefix"
+      - "traefik.http.services.hex_to_hsl.loadbalancer.server.port=3000"
+      - "traefik.http.middlewares.hex_to_hsl-stripprefix.stripprefix.prefixes=/hex_to_hsl"
+
   rgb_to_hsl:
     build: RgbToHslConverter
     restart: "no"

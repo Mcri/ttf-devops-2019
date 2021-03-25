@@ -30,7 +30,7 @@ describe("Test HexToRgbConverter REST API", () => {
 
   it("Should return an error message when no value is provided as query parameter", (done) => {
     const errMsg =
-      "Error! The correct usage for this service is: localhost:HexToRgbController?color={'hex': <string>}";
+      "Error! The correct usage for this service is: localhost/hex_to_rgb?color={'hex': <string>}";
     const errJson = { error: errMsg };
     chai
       .request(url)
@@ -45,7 +45,7 @@ describe("Test HexToRgbConverter REST API", () => {
 
   it("Should return an error message when an invalid value is provided as query parameter", (done) => {
     const errMsg =
-      "Error! The correct usage for this service is: localhost:HexToRgbController?color={'hex': <string>}";
+      "Error! The correct usage for this service is: localhost/hex_to_rgb?color={'hex': <string>}";
     const errJson = { error: errMsg };
     chai
       .request(url)

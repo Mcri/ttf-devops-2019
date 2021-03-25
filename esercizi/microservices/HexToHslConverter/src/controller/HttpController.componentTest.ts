@@ -42,7 +42,7 @@ describe('HexToHslConverter REST API tests', () => {
 
     it("Should return an error message when an invalid value is provided as query parameter", (done) => {
     const errMsg =
-        "Error! The correct usage for this service is: localhost:HexToHslController?color={'hex': <string>}";
+        "Error! The correct usage for this service is: localhost/hex_to_hsl?color={'hex': <string>}";
     const errJson = { error: errMsg };
     chai
         .request(url)
