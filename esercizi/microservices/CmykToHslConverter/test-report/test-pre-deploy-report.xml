@@ -1,0 +1,22 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="Test CmykToHsl REST API" tests="9" errors="0" failures="0" skipped="0" timestamp="2021-03-25T14:38:17" time="0.055">
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.029">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.001">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>
