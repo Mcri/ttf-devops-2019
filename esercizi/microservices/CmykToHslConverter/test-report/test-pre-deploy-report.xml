@@ -1,22 +1,28 @@
 <testsuites name="Mocha Tests">
-  <testsuite name="Test CmykToHsl REST API" tests="9" errors="0" failures="0" skipped="0" timestamp="2021-03-25T14:38:17" time="0.055">
-    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.029">
+  <testsuite name="Test CmykToHsl REST API" tests="12" errors="0" failures="0" skipped="0" timestamp="2021-03-25T15:38:28" time="0.046">
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.021">
     </testcase>
-    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.002">
     </testcase>
-    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.001">
     </testcase>
-    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.001">
     </testcase>
-    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.002">
     </testcase>
-    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.002">
     </testcase>
-    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.002">
     </testcase>
-    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.001">
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.002">
     </testcase>
-    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    <testcase classname="Test CmykToHsl REST API" name="Should include in the response body the HSL value corresponding to the query: [object Object]" time="0.003">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should return an error message when no value is provided as query parameter" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should return an error message when no value is provided as query parameter" time="0.002">
+    </testcase>
+    <testcase classname="Test CmykToHsl REST API" name="Should return an error message when an invalid value as query parameter" time="0.001">
     </testcase>
   </testsuite>
 </testsuites>

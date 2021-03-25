@@ -2,6 +2,7 @@ import chai from 'chai';
 import chaiHttp from 'chai-http';
 import * as config from '../../server-config.json'
 import { hsl2cmykTestData } from '../../../commons/src/test-data/colors';
+import { TtfCmyk } from '../../../commons/src/model/Color';
 
 chai.config.includeStack = true;
 const should = chai.should();
@@ -12,7 +13,6 @@ describe('Test CmykToHsl REST API', () => {
     console.log('Test URL: ' + url);
 
     hsl2cmykTestData.forEach((test) => {
-
         it(`Should include in the response body the HSL value corresponding to the query: ${test.cmykValue}`, (done) => {
             chai.request(url)
                 .get('/')
@@ -25,4 +25,32 @@ describe('Test CmykToHsl REST API', () => {
                 });
         });
     });
+
+    it("Should return an error message when no value is provided as query parameter", (done) => {
+        const errMsg:string = "Error! The correct usage for this service is: localhost:CmykToHslController?color={'cyan': <number>, 'magenta': <number>, 'yellow': <number>, 'black': <number>}";
+        const errJson = {error: errMsg};
+        chai.request(url)
+                .get('/')
+                .query(`color=`)
+                .end((err, res) => {
+                    res.should.have.status(400);
+                    res.body.should.deep.equal(errJson);
+                    done();
+                });
+    });
+
+    it("Should return an error message when an invalid value is provided as query parameter", (done) => {
+        const errMsg:string = "Error! The correct usage for this service is: localhost:CmykToHslController?color={'cyan': <number>, 'magenta': <number>, 'yellow': <number>, 'black': <number>}";
+        const errJson = {error: errMsg};
+        const badRequest:string = "{'cyan': 200, 'magenta': 40, 'yellow': 0, 'black': -70}"
+        chai.request(url)
+                .get('/')
+                .query(`color=${badRequest}`)
+                .end((err, res) => {
+                    res.should.have.status(400);
+                    res.body.should.deep.equal(errJson);
+                    done();
+                });
+    });
+
 });
