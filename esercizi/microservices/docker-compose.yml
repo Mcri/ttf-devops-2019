@@ -19,3 +19,23 @@ services:
 #      - "traefik.http.routers.<microservice-example-name>.middlewares=<microservice-example-name>-stripprefix"
 #      - "traefik.http.services.<microservice-example-name>.loadbalancer.server.port=3000"
 #      - "traefik.http.middlewares.<microservice-example-name>-stripprefix.stripprefix.prefixes=/<microservice-example-name>"
+
+  hex_to_rgb:
+    build: HexToRgbConverter
+    restart: "no"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.hex_to_rgb.rule=PathPrefix(`/hex_to_rgb`)"
+      - "traefik.http.routers.hex_to_rgb.middlewares=hex_to_rgb-stripprefix"
+      - "traefik.http.services.hex_to_rgb.loadbalancer.server.port=3000"
+      - "traefik.http.middlewares.hex_to_rgb-stripprefix.stripprefix.prefixes=/hex_to_rgb"
+
+  rgb_to_hsl:
+    build: RgbToHslConverter
+    restart: "no"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.rgb_to_hsl.rule=PathPrefix(`/rgb_to_hsl`)"
+      - "traefik.http.routers.rgb_to_hsl.middlewares=rgb_to_hsl-stripprefix"
+      - "traefik.http.services.rgb_to_hsl.loadbalancer.server.port=3000"
+      - "traefik.http.middlewares.rgb_to_hsl-stripprefix.stripprefix.prefixes=/rgb_to_hsl"
