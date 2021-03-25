@@ -1,0 +1,26 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="HexToHslConverter REST API tests" tests="11" errors="0" failures="0" skipped="0" timestamp="2021-03-25T18:10:25" time="0.056">
+    <testcase classname="HexToHslConverter REST API tests" name="Should return in the response body the correct HSl value for the Hex value provided in the query: [object Object]" time="0.031">
+    </testcase>
+    <testcase classname="HexToHslConverter REST API tests" name="Should return in the response body the correct HSl value for the Hex value provided in the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="HexToHslConverter REST API tests" name="Should return in the response body the correct HSl value for the Hex value provided in the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="HexToHslConverter REST API tests" name="Should return in the response body the correct HSl value for the Hex value provided in the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="HexToHslConverter REST API tests" name="Should return in the response body the correct HSl value for the Hex value provided in the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="HexToHslConverter REST API tests" name="Should return in the response body the correct HSl value for the Hex value provided in the query: [object Object]" time="0.001">
+    </testcase>
+    <testcase classname="HexToHslConverter REST API tests" name="Should return in the response body the correct HSl value for the Hex value provided in the query: [object Object]" time="0.001">
+    </testcase>
+    <testcase classname="HexToHslConverter REST API tests" name="Should return in the response body the correct HSl value for the Hex value provided in the query: [object Object]" time="0.001">
+    </testcase>
+    <testcase classname="HexToHslConverter REST API tests" name="Should return in the response body the correct HSl value for the Hex value provided in the query: [object Object]" time="0.001">
+    </testcase>
+    <testcase classname="HexToHslConverter REST API tests" name="Should return an error message when no value is provided as query parameter" time="0.002">
+    </testcase>
+    <testcase classname="HexToHslConverter REST API tests" name="Should return an error message when an invalid value is provided as query parameter" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>

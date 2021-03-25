@@ -1,26 +1,58 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 import * as config from '../../server-config.json'
+import {hex2hslTestData} from "../../../commons/src/test-data/colors";
 
 chai.config.includeStack = true;
 const should = chai.should();
 chai.use(chaiHttp);
 
-describe('REST API test suite description', () => {
+describe('HexToHslConverter REST API tests', () => {
     const url = process.env.npm_config_rgb2hex_test_url || `http://localhost:${config.port}`;
     console.log('Test URL: ' + url);
 
-    testData.forEach((test) => {
-        it(`test case description`, (done) => {
+    hex2hslTestData.forEach((test) => {
+        it(`Should return in the response body the correct HSl value for the Hex value provided in the query: ${test.hexValue}`, (done) => {
             chai.request(url)
                 .get('/')
-                .query(`color=${JSON.stringify(test.input)}`)
+                .query(`color=${JSON.stringify(test.hexValue)}`)
                 .end((err, res) => {
                     should.not.exist(err);
                     res.should.have.status(200);
-                    res.body.should.deep.equal(test.expected);
+                    res.body.should.deep.equal(test.hslValue);
                     done();
                 });
         });
     });
+
+    it("Should return an error message when no value is provided as query parameter", (done) => {
+        const errMsg =
+            "Error! The correct usage for this service is: localhost:HexToHslController?color={'hex': <string>}";
+        const errJson = { error: errMsg };
+        chai
+            .request(url)
+            .get("/")
+            .query(`color=`)
+            .end((err, res) => {
+            res.should.have.status(400);
+            res.body.should.deep.equal(errJson);
+            done();
+            });
+        });
+
+    it("Should return an error message when an invalid value is provided as query parameter", (done) => {
+    const errMsg =
+        "Error! The correct usage for this service is: localhost:HexToHslController?color={'hex': <string>}";
+    const errJson = { error: errMsg };
+    chai
+        .request(url)
+        .get("/")
+        .query(`color="{'hex': 'sf#na&jsfnaf'}"`)
+        .end((err, res) => {
+        res.should.have.status(400);
+        res.body.should.deep.equal(errJson);
+        done();
+        });
+    });
 });
+
