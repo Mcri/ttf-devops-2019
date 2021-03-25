@@ -7,6 +7,10 @@ class HttpController {
         server.get('/', (req, res) => {
             try {
                 const color = JSON.parse(req.query.color as string) as TtfCmyk;
+
+                if(color.cyan === undefined || !color.magenta === undefined || !color.yellow === undefined || !color.black == undefined)
+                    throw new Error();
+
                 const convertedColor: TtfHsl = convert(color);
                 res.send(convertedColor);
             }

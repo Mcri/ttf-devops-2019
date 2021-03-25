@@ -53,4 +53,18 @@ describe('Test CmykToHsl REST API', () => {
                 });
     });
 
+    it("Should return an error message when an incomplete value is provided query parameter", (done) => {
+        const errMsg:string = "Error! The correct usage for this service is: localhost:CmykToHslController?color={'cyan': <number>, 'magenta': <number>, 'yellow': <number>, 'black': <number>}";
+        const errJson = {error: errMsg};
+        const badRequest:string = "{'cyan': 200, 'yellow': 0, 'black': 70}"
+        chai.request(url)
+                .get('/')
+                .query(`color=${badRequest}`)
+                .end((err, res) => {
+                    res.should.have.status(400);
+                    res.body.should.deep.equal(errJson);
+                    done();
+                });
+    });
+
 });
