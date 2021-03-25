@@ -1,0 +1,7 @@
+node_modules
+
+/**/TestDataColor.js*
+/**/*.test.js*
+**/*.componentTest.js*
+
+package-lock.json
