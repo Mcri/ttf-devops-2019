@@ -37,7 +37,7 @@ Diversamente, è possibile seguire i successivi passi per l'avvio mediante coman
 
         Il servizio è disponibile all'indirizzo localhost/rgb_to_hsl, mediante chiamate HTTP GET.
         
-        Per poterlo utilizzare è necessario fornire una query color contenente un oggetto JSON atto a rappresentare un colore in formato esadecimale.
+        Per poterlo utilizzare è necessario fornire una query color contenente un oggetto JSON atto a rappresentare un colore in formato RGB.
         Esempio di chiamata al servizio valida:
 
             localhost/rgb_to_hsl?color={"red": 255, "green": 255, "blue": 255}
@@ -45,6 +45,20 @@ Diversamente, è possibile seguire i successivi passi per l'avvio mediante coman
         Si otterrà una risposta contenente una rappresentazione JSON del colore in formato HSL, esempio:
 
             {"hue":0,"saturation":0,"lightness":100}
+
+
+    cmyk_to_hsl
+
+        Il servizio è disponibile all'indirizzo localhost/cmyk_to_hsl, mediante chiamate HTTP GET.
+        
+        Per poterlo utilizzare è necessario fornire una query color contenente un oggetto JSON atto a rappresentare un colore in formato CMYK.
+        Esempio di chiamata al servizio valida:
+
+            localhost/cmyk_to_hsl?color={"cyan": 200, "magenta": 400, "yellow": 50, "black": 0 }
+
+        Si otterrà una risposta contenente una rappresentazione JSON del colore in formato HSL, esempio:
+
+            {"hue":240,"saturation":100,"lightness":25}
 
 
 ----- SHUTDOWN -----
@@ -63,7 +77,11 @@ permette invece l'interruzione e la rimozione dei container, oltre alla rimozion
 
 Aggiungendo il parametro-v è possibile rimuovere anche i volumi creati.
 
+
+
 ----- TROUBLESHOOTING -----
+
+Il file docker-compose.yml è - allo stato attuale - correttamente eseguibile solo su sistemi Linux based.
 
 Per poter utilizzare i servizi in esame, è necessario verificare che la porta 8080 e 3000 non siano già utilizzate da altre applicazioni.
 
