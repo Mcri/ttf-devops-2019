@@ -7,6 +7,7 @@ Porte 8080 e 3000 non utilizzate da altre applicazioni.
 Docker daemon correttamente installato.
 
 
+
 ----- AVVIO -----
 
 Utilizzare il file docker-compose.yml presente nella directory /microservices per la corretta inizializzazione dei microservizi di interesse
@@ -21,25 +22,15 @@ Diversamente, è possibile seguire i successivi passi per l'avvio mediante coman
 
         docker-compose up
 
+
+
 ----- UTILIZZO -----
 
     web console Traefik (reverse proxy):
 
         disponibile all'indirizzo localhost:8080
 
-    hex_to_rgb
 
-        Il servizio è disponibile all'indirizzo localhost/hex_to_rgb, mediante chiamate HTTP GET.
-
-        Per poterlo utilizzare è necessario fornire una query color contenente un oggetto JSON atto a rappresentare un colore in formato esadecimale.
-        Esempio di chiamata al servizio valida:
-
-            localhost/hex_to_rgb?color={"hex": "FFFFFF"}
-
-        Si otterrà una risposta contenente una rappresentazione JSON del colore in formato RGB, esempio:
-
-            {"red":255,"green":255,"blue":255}
-    
     rgb_to_hsl
 
         Il servizio è disponibile all'indirizzo localhost/rgb_to_hsl, mediante chiamate HTTP GET.
@@ -54,6 +45,7 @@ Diversamente, è possibile seguire i successivi passi per l'avvio mediante coman
             {"hue":0,"saturation":0,"lightness":100}
 
 
+
     cmyk_to_hsl
 
         Il servizio è disponibile all'indirizzo localhost/cmyk_to_hsl, mediante chiamate HTTP GET.
@@ -66,6 +58,48 @@ Diversamente, è possibile seguire i successivi passi per l'avvio mediante coman
         Si otterrà una risposta contenente una rappresentazione JSON del colore in formato HSL, esempio:
 
             {"hue":240,"saturation":100,"lightness":25}
+
+
+    hsl_to_rgb
+
+        Il servizio è disponibile all'indirizzo localhost/hsl_to_rgb mediante chiamate HTTP GET.
+        
+        Per poterlo utilizzare è necessario fornire una query color contenente un oggetto JSON atto a rappresentare un colore in formato HSL.
+        Esempio di chiamata al servizio valida:
+
+            localhost/hsl_to_rgb?color={"hue":0,"saturation":0,"lightness":100}
+
+        Si otterrà una risposta contenente una rappresentazione JSON del colore in formato RGB, esempio:
+
+            color={"red": 255, "green": 255, "blue": 255}
+
+    
+    hex_to_hsl
+
+        Il servizio è disponibile all'indirizzo localhost/hex_to_hsl, mediante chiamate HTTP GET.
+        
+        Per poterlo utilizzare è necessario fornire una query color contenente un oggetto JSON atto a rappresentare un colore in formato esadecimale.
+        Esempio di chiamata al servizio valida:
+
+            localhost/hex_to_hsl?color={"hex": "FFFFFF"}
+
+        Si otterrà una risposta contenente una rappresentazione JSON del colore in formato HSL, esempio:
+
+            {"hue":0,"saturation":0,"lightness":100}
+
+
+    hex_to_rgb (realizzato per composizione di hex_to_hsl e hsl_to_rgb)
+
+        Il servizio è disponibile all'indirizzo localhost/hex_to_rgb, mediante chiamate HTTP GET.
+
+        Per poterlo utilizzare è necessario fornire una query color contenente un oggetto JSON atto a rappresentare un colore in formato esadecimale.
+        Esempio di chiamata al servizio valida:
+
+            localhost/hex_to_rgb?color={"hex": "FFFFFF"}
+
+        Si otterrà una risposta contenente una rappresentazione JSON del colore in formato RGB, esempio:
+
+            {"red":255,"green":255,"blue":255}
 
 
 ----- SHUTDOWN -----

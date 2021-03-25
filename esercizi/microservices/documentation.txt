@@ -14,7 +14,7 @@ Per lo sviluppo delle funzionalità richieste si sono valutate due possibili sol
 
 2) L'implementazione di 6 microservizi e l'utilizzo della composizione tra gli stessi per garantire tutte le funzionalità
 
-    Microservizi stand-alone     ||     Funzionalità realizzate per composizione
+    Microservizi stand-alone     ||    Funzionalità realizzate per composizione
 
     HSL -> RGB  ;  HSL -> Hex    ||    CMYK -> HSL -> RGB ; CMYK -> HSL -> HEX 
  
@@ -23,4 +23,9 @@ Per lo sviluppo delle funzionalità richieste si sono valutate due possibili sol
     HSL -> CMYK  ;  CMYK -> HSL  ||    Hex -> HSL -> RGB  ; Hex -> HSL  -> CMYK
 
 
-Si è scelta la seconda implementazione.
+Si è scelta la seconda implementazione per via della maggiore granularità e del miglior controllo sulle implementazioni,
+preferendo l'utilizzo di un un approccio modulare per garantire tutte le funzionalità richieste.
+Quest'ultimo permette anche di ridurre l'accoppiamento tra i vari microservizi, facendo in modo che il fallimento del singolo impatti di meno sull'operato di altri.
+
+In generale, maggiore è il numero di microservizi implementati in modo indipendente, come conversione diretta da un formato ad un altro,
+maggiore è il grado di indipendenza che è possibile ottenere, a spese di un maggior dispendio di risorse ed utilizzo di un maggior numero di container.
