@@ -39,3 +39,13 @@ services:
       - "traefik.http.routers.rgb_to_hsl.middlewares=rgb_to_hsl-stripprefix"
       - "traefik.http.services.rgb_to_hsl.loadbalancer.server.port=3000"
       - "traefik.http.middlewares.rgb_to_hsl-stripprefix.stripprefix.prefixes=/rgb_to_hsl"
+
+  cmyk_to_hsl:
+    build: CmykToHslConverter
+    restart: "no"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.cmyk_to_hsl.rule=PathPrefix(`/cmyk_to_hsl`)"
+      - "traefik.http.routers.cmyk_to_hsl.middlewares=cmyk_to_hsl-stripprefix"
+      - "traefik.http.services.cmyk_to_hsl.loadbalancer.server.port=3000"
+      - "traefik.http.middlewares.cmyk_to_hsl-stripprefix.stripprefix.prefixes=/cmyk_to_hsl"
