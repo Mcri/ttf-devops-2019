@@ -1,0 +1,22 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="test Hex to HSL converter" tests="9" errors="0" failures="0" skipped="0" timestamp="2021-03-25T17:58:58" time="0.009">
+    <testcase classname="test Hex to HSL converter" name="Should return the HSL value corresponding to the provided Hex value" time="0.001">
+    </testcase>
+    <testcase classname="test Hex to HSL converter" name="Should return the HSL value corresponding to the provided Hex value" time="0">
+    </testcase>
+    <testcase classname="test Hex to HSL converter" name="Should return the HSL value corresponding to the provided Hex value" time="0">
+    </testcase>
+    <testcase classname="test Hex to HSL converter" name="Should return the HSL value corresponding to the provided Hex value" time="0">
+    </testcase>
+    <testcase classname="test Hex to HSL converter" name="Should return the HSL value corresponding to the provided Hex value" time="0">
+    </testcase>
+    <testcase classname="test Hex to HSL converter" name="Should return the HSL value corresponding to the provided Hex value" time="0.001">
+    </testcase>
+    <testcase classname="test Hex to HSL converter" name="Should return the HSL value corresponding to the provided Hex value" time="0">
+    </testcase>
+    <testcase classname="test Hex to HSL converter" name="Should return the HSL value corresponding to the provided Hex value" time="0.001">
+    </testcase>
+    <testcase classname="test Hex to HSL converter" name="Should return the HSL value corresponding to the provided Hex value" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>
