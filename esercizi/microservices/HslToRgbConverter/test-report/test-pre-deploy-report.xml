@@ -1,0 +1,24 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="Test HslToRgbConverter" tests="10" errors="0" failures="0" skipped="0" timestamp="2021-03-25T18:09:31" time="0.067">
+    <testcase classname="Test HslToRgbConverter" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.031">
+    </testcase>
+    <testcase classname="Test HslToRgbConverter" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.003">
+    </testcase>
+    <testcase classname="Test HslToRgbConverter" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.003">
+    </testcase>
+    <testcase classname="Test HslToRgbConverter" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test HslToRgbConverter" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.003">
+    </testcase>
+    <testcase classname="Test HslToRgbConverter" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.003">
+    </testcase>
+    <testcase classname="Test HslToRgbConverter" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.002">
+    </testcase>
+    <testcase classname="Test HslToRgbConverter" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.003">
+    </testcase>
+    <testcase classname="Test HslToRgbConverter" name="Should include in the response body the RGB value corresponding to the query: [object Object]" time="0.003">
+    </testcase>
+    <testcase classname="Test HslToRgbConverter" name="Should return an error message when no value is provided as query parameter" time="0.003">
+    </testcase>
+  </testsuite>
+</testsuites>

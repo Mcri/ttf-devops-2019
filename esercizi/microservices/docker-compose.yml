@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   reverse-proxy:
     image: traefik
@@ -10,15 +10,15 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
-#  <microservice-example-name>:
-#    build: <microservice-example-name>
-#    restart: "no"
-#    labels:
-#      - "traefik.enable=true"
-#      - "traefik.http.routers.<microservice-example-name>.rule=PathPrefix(`/<microservice-example-name>`)"
-#      - "traefik.http.routers.<microservice-example-name>.middlewares=<microservice-example-name>-stripprefix"
-#      - "traefik.http.services.<microservice-example-name>.loadbalancer.server.port=3000"
-#      - "traefik.http.middlewares.<microservice-example-name>-stripprefix.stripprefix.prefixes=/<microservice-example-name>"
+  #  <microservice-example-name>:
+  #    build: <microservice-example-name>
+  #    restart: "no"
+  #    labels:
+  #      - "traefik.enable=true"
+  #      - "traefik.http.routers.<microservice-example-name>.rule=PathPrefix(`/<microservice-example-name>`)"
+  #      - "traefik.http.routers.<microservice-example-name>.middlewares=<microservice-example-name>-stripprefix"
+  #      - "traefik.http.services.<microservice-example-name>.loadbalancer.server.port=3000"
+  #      - "traefik.http.middlewares.<microservice-example-name>-stripprefix.stripprefix.prefixes=/<microservice-example-name>"
 
   hex_to_rgb:
     build: HexToRgbConverter
@@ -49,3 +49,13 @@ services:
       - "traefik.http.routers.cmyk_to_hsl.middlewares=cmyk_to_hsl-stripprefix"
       - "traefik.http.services.cmyk_to_hsl.loadbalancer.server.port=3000"
       - "traefik.http.middlewares.cmyk_to_hsl-stripprefix.stripprefix.prefixes=/cmyk_to_hsl"
+
+  hsl_to_rgb:
+    build: HslToRgbConverter
+    restart: "no"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.hsl_to_rgb.rule=PathPrefix(`/hsl_to_rgb`)"
+      - "traefik.http.routers.hsl_to_rgb.middlewares=hsl_to_rgb-stripprefix"
+      - "traefik.http.services.hsl_to_rgb.loadbalancer.server.port=3000"
+      - "traefik.http.middlewares.hsl_to_rgb-stripprefix.stripprefix.prefixes=/hsl_to_rgb"
